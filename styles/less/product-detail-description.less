@@ -1,0 +1,29 @@
+.product-detail-description {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 30px;
+}
+
+.description-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F3F3;
+    border-radius: 14px;
+    padding: 30px 40px;
+    width: 100%;
+
+    & .description-card__text {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    & .description-card__text--bold {
+        font-weight: 700;
+    }
+}
+
+& .description-card--full {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

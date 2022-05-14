@@ -1,0 +1,132 @@
+.item1 {
+    grid-area: sidebar;
+    height: 855px;
+    width: 292px;
+}
+
+.item2 {
+    grid-area: header;
+    height: 111px;
+    width: 900px;
+}
+
+.item3 {
+    grid-area: body;
+    height: 736px;
+    width: 900px;
+}
+
+.user-grid-container {
+    display: grid;
+    grid-gap: 5px;
+    padding: 10px;
+    grid-template-areas:
+        'sidebar header'
+        'sidebar body'
+        'sidebar body';
+
+    &>div {
+        background-color: #fff;
+    }
+}
+
+.sidebar-user-info {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+
+    & img {
+        width: 70px;
+        height: auto;
+    }
+
+    & .sidebar-user-header {
+        margin-left: 20px;
+
+        & .sidebar-user-header__name {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        & .sidebar-user-header__name--big {
+            font-size: 24px;
+        }
+
+
+        & .sidebar-user-header__number {
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+}
+
+.layout-item {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    margin-bottom: 25px;
+
+    & img {
+        width: 25px;
+        margin-right: 10px;
+    }
+
+    & span {
+        font-size: 18px;
+        font-weight: 300;
+        color: #6D6D6D;
+    }
+}
+
+.layout-item--active {
+    background-color: #c4c4c482;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    & span {
+        font-weight: 700;
+        color: #000;
+    }
+}
+
+.user-grid-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+
+    & .user-grid-header__header {
+        font-size: 24px;
+        font-weight: 400;
+        color: #444444;
+    }
+
+    & .user-grid-header__header--bold {
+        font-weight: 700;
+    }
+}
+
+.user-grid-body {
+    text-align: center;
+
+    & img {
+        width: 100px;
+        margin-bottom: 40px;
+    }
+
+    & .user-grid-body__header {
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 55px;
+    }
+
+    & .btn {
+        font-size: 24px;
+        font-weight: 700;
+    }
+}

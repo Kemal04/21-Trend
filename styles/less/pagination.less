@@ -1,0 +1,30 @@
+.pagination {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    & .pagination__title {
+        font-size: 14px;
+        font-weight: 400;
+        color: #555555;
+    }
+
+    & .pagination__btn {
+        font-size: 14px;
+        color: #555555;
+    }
+
+    & .pagination__number{
+        background-color: #1c1b1b3b;
+        margin-right: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 50px;
+        padding: 5px 10px;
+    }
+
+    & .pagination__number--active{
+        background-color: @primary-color;
+        color: #fff;
+    }
+}
